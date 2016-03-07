@@ -5,7 +5,7 @@
   minimum_rancher_version: v0.46.0
   questions:
     - variable: PLANNING_DB_TYPE
-      description: "Tipo da Base de dados. Valores válidos: SQLSERVER | ORACLE"
+      description: "Tipo da Base de dados. Valores validos: SQLSERVER | ORACLE"
       label: "Tipo de database"
       type: enum
         options:
@@ -29,13 +29,13 @@
       required: true
       default: 1433
     - variable: PLANNING_DB_USERNAME
-      description: "Username utilizado para conectar à base de dados."
+      description: "Username utilizado para conectar a base de dados."
       label: "Database username"
       type: "string"
       required: true
       default: "XSCXPLAN"
     - variable: PLANNING_DB_PASSWORD
-      description: "Password utilizado para conectar à base de dados."
+      description: "Password utilizado para conectar a base de dados."
       label: "Database passwodd"
       type: "password"
       required: true
