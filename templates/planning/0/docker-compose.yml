@@ -1,4 +1,3 @@
-# TEMPLATE ORACLE
 database:
   image: registry.desenvpln.com.br/planning-oracle-ref:latest
   ports:
@@ -12,8 +11,6 @@ algorithm:
   - database
   environment:
   - PLANNING_STACK=true
-  labels:
-    io.rancher.sidekicks: database
 web:
   image: registry.desenvpln.com.br/planning-web:latest
   ports:
@@ -24,5 +21,3 @@ web:
   - database
   environment:
   - PLANNING_STACK=true
-  labels:
-    io.rancher.sidekicks: database, algorithm
