@@ -8,9 +8,9 @@
       description: "Tipo da Base de dados."
       label: "Tipo de database"
       type: enum
-        options:
-          - SQLSERVER
-          - ORACLE
+      options:
+        - SQLSERVER
+        - ORACLE
       required: true
     - variable: PLANNING_DB_HOSTNAME
       description: "Hostname do servidor de banco de dados."
