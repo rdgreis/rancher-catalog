@@ -1,0 +1,5 @@
+name: Planning
+description: |
+  Stack que utiliza um banco de dados externo.
+version: 3.14
+category: Application

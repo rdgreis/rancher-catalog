@@ -1,0 +1,32 @@
+# TEMPLATE ORACLE
+database:
+  image: registry.desenvpln.com.br/planning-oracle-ref:latest
+  ports:
+      - "1521"
+  labels:
+      io.rancher.container.hostname_override: container_name
+algorithm:
+  image: registry.desenvpln.com.br/planning-algorithm:latest
+  ports:
+      - "7776"
+      - "9990"
+  links:
+      - database
+  environment:
+      - PLANNING_STACK=true
+  labels:
+      io.rancher.container.hostname_override: container_name
+      io.rancher.sidekicks: database
+web:
+  image: registry.desenvpln.com.br/planning-web:latest
+  ports:
+       - "7776"
+       - "9990"
+  links:
+      - algorithm
+      - database
+  environment:
+      - PLANNING_STACK=true
+  labels:
+      io.rancher.container.hostname_override: container_name
+      io.rancher.sidekicks: database, algorithm
