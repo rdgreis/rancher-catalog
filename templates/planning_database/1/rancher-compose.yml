@@ -1,5 +1,5 @@
 .catalog:
-  name: "Planning"
+  name: "Planning + Database"
   version: "3.14.0.3-SNAPSHOT"
   description: "Planning"
   minimum_rancher_version: v0.46.0
