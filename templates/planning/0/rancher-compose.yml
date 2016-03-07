@@ -28,23 +28,22 @@
       type: "int"
       required: true
       default: 1433
-    - variable: PLANNING_DB_USERNAME
-      description: "Username utilizado para conectar a base de dados."
-      label: "Database username"
-      type: "string"
-      required: true
-      default: "XSCXPLAN"
-    - variable: PLANNING_DB_PASSWORD
-      description: "Password utilizado para conectar a base de dados."
-      label: "Database password"
-      type: "password"
-      required: true
     - variable: PLANNING_DB_JNDI
       description: "Nome JNDI"
       label: "JNDI"
       type: "string"
       required: true
       default: "XSCXPLAN"
+    - variable: PLANNING_DB_USERNAME
+      description: "Username utilizado para conectar a base de dados."
+      label: "Database username"
+      type: "string"
+      required: true
+    - variable: PLANNING_DB_PASSWORD
+      description: "Password utilizado para conectar a base de dados."
+      label: "Database password"
+      type: "password"
+      required: true
 database:
   scale: 1
 algorithm:
