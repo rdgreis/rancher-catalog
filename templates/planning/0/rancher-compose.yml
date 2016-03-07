@@ -11,6 +11,7 @@
       options:
         - SQLSERVER
         - ORACLE
+      required: true
     - variable: PLANNING_DEBUG
       description: "Modo debug."
       label: "Debug mode"
@@ -18,7 +19,7 @@
       options:
         - ON
         - OFF
-      required: true
+      required: false
     - variable: PLANNING_DB_HOSTNAME
       description: "Hostname do servidor de banco de dados."
       label: "Database hostname"
