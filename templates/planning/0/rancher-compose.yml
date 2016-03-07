@@ -11,6 +11,13 @@
       options:
         - SQLSERVER
         - ORACLE
+    - variable: PLANNING_DEBUG
+      description: "Modo debug."
+      label: "Debug mode"
+      type: enum
+      options:
+        - ON
+        - OFF
       required: true
     - variable: PLANNING_DB_HOSTNAME
       description: "Hostname do servidor de banco de dados."
