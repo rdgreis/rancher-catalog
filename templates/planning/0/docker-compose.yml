@@ -1,7 +1,7 @@
 # TEMPLATE ORACLE
 database:
   image: registry.desenvpln.com.br/planning-oracle-ref:latest
-
+  ports:
   - "1521"
   labels:
     io.rancher.container.hostname_override: container_name
